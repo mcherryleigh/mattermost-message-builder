@@ -1,0 +1,31 @@
+{
+  "name": "mattermost-message-builder",
+  "description": "Library to create JSON message payloads for mattermost. Includes a simple CLI utility to send template files to a configured incoming webhook.",
+  "keywords": ["mattermost","slack","messaging","chatbot","chatbots","cli",""],
+  "version": "0.0.0",
+  "private": false,
+  "author": "Michael Cherry-Leigh",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mcherryleigh/mattermost-message-builder.git"
+  },
+  "bugs": {
+    "url": "https://github.com/mcherryleigh/mattermost-message-builder/issues"
+  },
+  "main": "index.js",
+  "scripts": {
+    "test": "ava"
+  },
+  "dependencies": {
+    "lodash": "^4.17.4",
+    "request": "^2.83.0",
+    "request-promise": "^4.2.2",
+    "yargs": "^10.1.1"
+  },
+  "devDependencies": {
+    "ava": "^0.24.0",
+    "coveralls": "^3.0.0",
+    "nyc": "^11.4.1"
+  }
+}
