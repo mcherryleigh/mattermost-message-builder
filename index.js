@@ -1,4 +1,4 @@
 module.exports = {
-    Attachment: require('./attachment.js'),
-    Message: require('./message.js')
-}
+  Attachment: require("./attachment.js"),
+  Message: require("./message.js")
+};
