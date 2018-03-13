@@ -2,7 +2,7 @@ import test from "ava";
 import Message from "../message";
 import Attachment from "../attachment";
 
-test("can set the message text", t => {
+test("can set the message text", (t) => {
   var comparisonObj = {};
   comparisonObj.text = "Awesome Text";
 
@@ -12,7 +12,7 @@ test("can set the message text", t => {
   t.deepEqual(comparisonObj, message.getMessage);
 });
 
-test("message text must be string", t => {
+test("message text must be string", (t) => {
   var comparisonObj = {};
   try {
     var message = new Message();
@@ -22,7 +22,7 @@ test("message text must be string", t => {
   }
 });
 
-test("can set the message channel", t => {
+test("can set the message channel", (t) => {
   var comparisonObj = {};
   comparisonObj.channel = "AwesomeChannel";
 
@@ -32,7 +32,7 @@ test("can set the message channel", t => {
   t.deepEqual(comparisonObj, message.getMessage);
 });
 
-test("message channel must be string", t => {
+test("message channel must be string", (t) => {
   var comparisonObj = {};
   try {
     var message = new Message();
@@ -42,7 +42,7 @@ test("message channel must be string", t => {
   }
 });
 
-test("can set the message username", t => {
+test("can set the message username", (t) => {
   var comparisonObj = {};
   comparisonObj.channel = "AwesomeUser";
 
@@ -52,7 +52,7 @@ test("can set the message username", t => {
   t.deepEqual(comparisonObj, message.getMessage);
 });
 
-test("message username must be string", t => {
+test("message username must be string", (t) => {
   var comparisonObj = {};
   try {
     var message = new Message();
@@ -62,7 +62,7 @@ test("message username must be string", t => {
   }
 });
 
-test("can set the message icon_url", t => {
+test("can set the message icon_url", (t) => {
   var comparisonObj = {};
   comparisonObj.icon_url = "http://example.com/awesomeimage.jpg";
 
@@ -72,7 +72,7 @@ test("can set the message icon_url", t => {
   t.deepEqual(comparisonObj, message.getMessage);
 });
 
-test("message icon_url must be string", t => {
+test("message icon_url must be string", (t) => {
   var comparisonObj = {};
   try {
     var message = new Message();
@@ -82,7 +82,7 @@ test("message icon_url must be string", t => {
   }
 });
 
-test("message can have multiple attachments", t => {
+test("message can have multiple attachments", (t) => {
   var comparisonObj = {};
   comparisonObj.attachments = [];
   comparisonObj.attachments[0] = { text: "A1" };
@@ -102,7 +102,7 @@ test("message can have multiple attachments", t => {
   t.deepEqual(message.getMessage, comparisonObj);
 });
 
-test("complete message turns out as expected", t => {
+test("complete message turns out as expected", (t) => {
   var comparisonObj = {};
   comparisonObj.attachments = [];
   comparisonObj.text = "Awesome Text";

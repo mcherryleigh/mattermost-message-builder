@@ -188,8 +188,9 @@ class Attachment {
     if (
       !this.result.hasOwnProperty("actions") ||
       this.result.actions.length <= 0
-    )
+    ) {
       this.result.actions = [];
+    }
     this.result.actions.push(obj);
     return this;
   }

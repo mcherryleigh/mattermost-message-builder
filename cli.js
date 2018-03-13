@@ -24,9 +24,7 @@ var argv = require("yargs")
 var sendMessage = async function() {
   try {
     if (argv.hook == null) {
-      console.log(
-        "You must specify a MATTERMOST_HOOK environmental variable or use the --hook argument"
-      );
+      console.log("You must specify a MATTERMOST_HOOK environmental variable or use the --hook argument");
     } else {
       console.log(`Sending file: ${argv.t} to hook: ${argv.hook}`);
       var options = {

@@ -2,7 +2,7 @@ import test from "ava";
 
 var Attachment = require("../attachment");
 
-test("can set the attachment fallback", t => {
+test("can set the attachment fallback", (t) => {
   var comparisonObj = {};
   comparisonObj.fallback = "Awesome Fallback";
 
@@ -12,7 +12,7 @@ test("can set the attachment fallback", t => {
   t.deepEqual(comparisonObj, attachment.getAttachment);
 });
 
-test("attachment fallback must be string", t => {
+test("attachment fallback must be string", (t) => {
   try {
     var attachment = new Attachment();
     attachment.setFallback(3);
@@ -24,7 +24,7 @@ test("attachment fallback must be string", t => {
   }
 });
 
-test("can set the attachment pretext", t => {
+test("can set the attachment pretext", (t) => {
   var comparisonObj = {};
   comparisonObj.pretext = "Awesome Pretext";
 
@@ -34,7 +34,7 @@ test("can set the attachment pretext", t => {
   t.deepEqual(comparisonObj, attachment.getAttachment);
 });
 
-test("attachment pretext must be string", t => {
+test("attachment pretext must be string", (t) => {
   try {
     var attachment = new Attachment();
     attachment.setPretext(3);
@@ -46,7 +46,7 @@ test("attachment pretext must be string", t => {
   }
 });
 
-test("can set the attachment text", t => {
+test("can set the attachment text", (t) => {
   var comparisonObj = {};
   comparisonObj.text = "Awesome Text";
 
@@ -56,7 +56,7 @@ test("can set the attachment text", t => {
   t.deepEqual(comparisonObj, attachment.getAttachment);
 });
 
-test("attachment text must be string", t => {
+test("attachment text must be string", (t) => {
   try {
     var attachment = new Attachment();
     attachment.setText(3);
@@ -65,7 +65,7 @@ test("attachment text must be string", t => {
   }
 });
 
-test("can set the attachment color", t => {
+test("can set the attachment color", (t) => {
   var comparisonObj = {};
   comparisonObj.color = "#000000";
 
@@ -75,7 +75,7 @@ test("can set the attachment color", t => {
   t.deepEqual(comparisonObj, attachment.getAttachment);
 });
 
-test("attachment text must be string", t => {
+test("attachment text must be string", (t) => {
   try {
     var attachment = new Attachment();
     attachment.setColor(3);
@@ -84,7 +84,7 @@ test("attachment text must be string", t => {
   }
 });
 
-test("can set the attachment author_name", t => {
+test("can set the attachment author_name", (t) => {
   var comparisonObj = {};
   comparisonObj.author_name = "Awesome Author";
 
@@ -94,7 +94,7 @@ test("can set the attachment author_name", t => {
   t.deepEqual(comparisonObj, attachment.getAttachment);
 });
 
-test("attachment author_name must be string", t => {
+test("attachment author_name must be string", (t) => {
   try {
     var attachment = new Attachment();
     attachment.setAuthorName(3);
@@ -106,7 +106,7 @@ test("attachment author_name must be string", t => {
   }
 });
 
-test("can set the attachment author_icon", t => {
+test("can set the attachment author_icon", (t) => {
   var comparisonObj = {};
   comparisonObj.author_icon = "http://example.com/awesomeimage.jpg";
 
@@ -116,7 +116,7 @@ test("can set the attachment author_icon", t => {
   t.deepEqual(comparisonObj, attachment.getAttachment);
 });
 
-test("attachment author_icon must be string", t => {
+test("attachment author_icon must be string", (t) => {
   try {
     var attachment = new Attachment();
     attachment.setAuthorIcon(3);
@@ -128,7 +128,7 @@ test("attachment author_icon must be string", t => {
   }
 });
 
-test("can set the attachment author_link", t => {
+test("can set the attachment author_link", (t) => {
   var comparisonObj = {};
   comparisonObj.author_link = "http://example.com/";
 
@@ -138,7 +138,7 @@ test("can set the attachment author_link", t => {
   t.deepEqual(comparisonObj, attachment.getAttachment);
 });
 
-test("attachment author_link must be string", t => {
+test("attachment author_link must be string", (t) => {
   try {
     var attachment = new Attachment();
     attachment.setAuthorLink(3);
@@ -150,7 +150,7 @@ test("attachment author_link must be string", t => {
   }
 });
 
-test("can set the attachment title", t => {
+test("can set the attachment title", (t) => {
   var comparisonObj = {};
   comparisonObj.title = "Awesome Title";
 
@@ -160,7 +160,7 @@ test("can set the attachment title", t => {
   t.deepEqual(comparisonObj, attachment.getAttachment);
 });
 
-test("attachment title must be string", t => {
+test("attachment title must be string", (t) => {
   try {
     var attachment = new Attachment();
     attachment.setTitle(3);
@@ -169,7 +169,7 @@ test("attachment title must be string", t => {
   }
 });
 
-test("can set the attachment title_link", t => {
+test("can set the attachment title_link", (t) => {
   var comparisonObj = {};
   comparisonObj.title_link = "http://example.com/";
 
@@ -179,7 +179,7 @@ test("can set the attachment title_link", t => {
   t.deepEqual(comparisonObj, attachment.getAttachment);
 });
 
-test("attachment title_link must be string", t => {
+test("attachment title_link must be string", (t) => {
   try {
     var attachment = new Attachment();
     attachment.setTitleLink(3);
@@ -191,7 +191,7 @@ test("attachment title_link must be string", t => {
   }
 });
 
-test("can set the attachment image_url", t => {
+test("can set the attachment image_url", (t) => {
   var comparisonObj = {};
   comparisonObj.image_url = "http://example.com/";
 
@@ -201,7 +201,7 @@ test("can set the attachment image_url", t => {
   t.deepEqual(comparisonObj, attachment.getAttachment);
 });
 
-test("attachment image_url must be string", t => {
+test("attachment image_url must be string", (t) => {
   try {
     var attachment = new Attachment();
     attachment.setImageUrl(3);
@@ -213,7 +213,7 @@ test("attachment image_url must be string", t => {
   }
 });
 
-test("can set the attachment thumb_url", t => {
+test("can set the attachment thumb_url", (t) => {
   var comparisonObj = {};
   comparisonObj.thumb_url = "http://example.com/";
 
@@ -223,7 +223,7 @@ test("can set the attachment thumb_url", t => {
   t.deepEqual(comparisonObj, attachment.getAttachment);
 });
 
-test("attachment thumb_url must be string", t => {
+test("attachment thumb_url must be string", (t) => {
   try {
     var attachment = new Attachment();
     attachment.setThumbUrl(3);
@@ -235,7 +235,7 @@ test("attachment thumb_url must be string", t => {
   }
 });
 
-test("attachment can have multiple fields", t => {
+test("attachment can have multiple fields", (t) => {
   var comparisonObj = {};
   comparisonObj.fields = [];
   comparisonObj.fields[0] = {
@@ -263,7 +263,7 @@ test("attachment can have multiple fields", t => {
   t.deepEqual(comparisonObj, attachment.getAttachment);
 });
 
-test("attachment can have multiple actions", t => {
+test("attachment can have multiple actions", (t) => {
   var comparisonObj = {};
   comparisonObj.actions = [];
   comparisonObj.actions[0] = {
